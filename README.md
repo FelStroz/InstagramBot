@@ -14,8 +14,8 @@ Um projeto (apenas por brincadeira) para comentar em sorteios no instagram com u
 
 ![Platform](https://img.shields.io/badge/platform-NODE-lightgrey.svg?style=flat)
 
-Instalation (Instalação)
-===
+#Instalation (Instalação)
+
 
 <h3>If using Docker:</h3>
 
@@ -52,7 +52,7 @@ Instalation (Instalação)
         
        Note that this command has some unused information but still works.
        
-       If you have exited the container, make sure you continue the following instructions, if not proceed to the next section.
+       If you have exited the container, make sure you continue the following instructions, if not proceed to the [next section](#running-inicializar).
      - You can see the container that contains you builted image with the command
        ```bash
         $ sudo docker ps -a
@@ -77,6 +77,6 @@ Instalation (Instalação)
        
        DONE!
 
-Running (Inicializar)
-===
+#Running (Inicializar)
+
 
