@@ -18,7 +18,7 @@ Um projeto (apenas por brincadeira) para comentar em sorteios no instagram com u
 Instalation (Instalação)
 ===
 
-####If using Docker:
+<h3>If using Docker:</h3>
 
 1. Install Docker :
     - If using Linux/Ubuntu or any other almost the same -> [Install Docker Linux](https://docs.docker.com/engine/install/ubuntu/)
