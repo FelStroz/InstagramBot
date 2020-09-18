@@ -14,8 +14,7 @@ Um projeto (apenas por brincadeira) para comentar em sorteios no instagram com u
 
 ![Platform](https://img.shields.io/badge/platform-NODE-lightgrey.svg?style=flat)
 
-#Instalation (Instalação)
-
+# Instalation (Instalação)
 
 <h3>If using Docker:</h3>
 
