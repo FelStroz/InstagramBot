@@ -20,6 +20,7 @@ Um projeto (apenas por brincadeira) para comentar em sorteios no instagram com u
 First you have to enter the directory of db and in other terminal in the directory of the bot and run the steps below for each directory.
 <br>
 <br>
+
 1. Install Docker :
     - If using Linux/Ubuntu or any other almost the same -> [Install Docker Linux](https://docs.docker.com/engine/install/ubuntu/)
     - If using Windows -> [Install Docker Desktop Windows](https://docs.docker.com/docker-for-windows/install/)
@@ -53,7 +54,7 @@ First you have to enter the directory of db and in other terminal in the directo
         
        Note that this command has some unused information like the port that is going to 3000, but still works.
        
-       If you have exited the container, make sure you continue the following instructions, if not proceed to the [next section](#variables-variáveis).
+       If you have exited the container, make sure you continue the following instructions, if not procceed to the [next section](#variables-variáveis).
      - You can see the container that contains the image that was built with the command
        ```bash
         $ sudo docker ps -a
