@@ -17,7 +17,9 @@ Um projeto (apenas por brincadeira) para comentar em sorteios no instagram com u
 # Instalation (Instalação)
 
 <h3>If using Docker:</h3>
-
+First you have to enter the directory of db and in other terminal in the directory of the bot and run the steps below for each directory.
+<br>
+<br>
 1. Install Docker :
     - If using Linux/Ubuntu or any other almost the same -> [Install Docker Linux](https://docs.docker.com/engine/install/ubuntu/)
     - If using Windows -> [Install Docker Desktop Windows](https://docs.docker.com/docker-for-windows/install/)
@@ -43,16 +45,16 @@ Um projeto (apenas por brincadeira) para comentar em sorteios no instagram com u
         instabot            Dockerfile          e0ce835f15ff        About a minute ago   943MB
         node                latest              0192dbbb554c        2 days ago           943MB
        ```
-     - Now that you have your image, you have to put this image into a container in docker, so run this command below
+     - Now that you have your image, you have to run this image inside a container in docker, so write this command below to do it
        ```bash
         $ sudo docker run -it -v"$(pwd):/volume" -p3000:3000 instabot:Dockerfile bash
        ```
        So now you are inside the container and can start programming. If you press **CTRL + D**, you will exit to terminal.
         
-       Note that this command has some unused information but still works.
+       Note that this command has some unused information like the port that is going to 3000, but still works.
        
-       If you have exited the container, make sure you continue the following instructions, if not proceed to the [next section](#running-inicializar).
-     - You can see the container that contains you builted image with the command
+       If you have exited the container, make sure you continue the following instructions, if not proceed to the [next section](#variables-variáveis).
+     - You can see the container that contains the image that was built with the command
        ```bash
         $ sudo docker ps -a
        ```
@@ -73,10 +75,21 @@ Um projeto (apenas por brincadeira) para comentar em sorteios no instagram com u
        ```bash
         $ sudo docker attach <CONTAINERID>
        ```
+       **NOTE:** If you are using windows you don't need the sudo command.
+       <br>
        
        DONE!
 
+<h3>If using Node locally:</h3>
 
-# Running (Inicializar)
+1. Install Node:
+    - If using Linux/Ubuntu or any other almost the same -> [Install Node Linux](https://www.geeksforgeeks.org/installation-of-node-js-on-linux/)
+    - If using Windows -> [Install Node Windows](https://nodejs.org/en/download/)
+2. Running with Node:
+    - Enter the directories of db and the bot and run the command for each one
+        ```bash
+         $ node index.js
+        ```
+        Then everything must be working!
 
-
+# Variables (Variáveis)
