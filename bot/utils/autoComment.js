@@ -33,7 +33,12 @@ const instagram = {
         await instagram.page.type('textarea[class="Ypffh"]', comment, {delay: 200})
         let submitButton = await instagram.page.waitForSelector('#react-root > section > main > div > div.ltEKP > article > div.eo2As > section.sH9wk._JgwE > div.RxpZH > form > button');
         await submitButton.click();
-        console.log('Comentário -> Encerrado!')
+        // let divError = await instagram.page.waitForSelector('body > div.Z2m7o > div');
+        // console.log(divError.innerHTML);
+        // if(divError)
+        //     await instagram.page.reload({waitUntil: 'networkidle2'});
+        // else
+            console.log('Comentário -> Encerrado!')
     },
 
 }
