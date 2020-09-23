@@ -16,7 +16,7 @@ const mongo = {
         console.log("Inserir nomes no DB -> Encerrado");
     },
     find: async () => {
-        let people = await Person.find();
+        let people = await Person.find().catch((e) => {console.log(e)});
         console.log("Procurar nomes no DB -> Encerrado");
         return people;
     },
