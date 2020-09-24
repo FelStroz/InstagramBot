@@ -38,7 +38,11 @@ const instagram = {
         // if(divError)
         //     await instagram.page.reload({waitUntil: 'networkidle2'});
         // else
-            console.log('Comentário -> Encerrado!')
+            console.log('Comentário -> Encerrado!');
+    },
+    reloadPage: async() => {
+        await instagram.page.reload({waitUntil: 'networkidle2'});
+        console.log('Reload da página -> Encerrado!');
     },
 
 }

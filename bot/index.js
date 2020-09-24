@@ -1,4 +1,4 @@
-const {generatePage, login, navigationToSweepstake, comment} = require('./utils/autoComment');
+const {generatePage, login, navigationToSweepstake, comment, reloadPage} = require('./utils/autoComment');
 require('dotenv').config({path: '../.env'});
 const db = require('../db/utils/mongooseFunc');
 
@@ -7,15 +7,20 @@ const db = require('../db/utils/mongooseFunc');
     // await db.insert();
     let people = await db.find();
 
-    await generatePage('https://www.instagram.com/p/BQrAfNmjla1/');
+    await generatePage('https://www.instagram.com/p/CFdWpTvneUi/');
     await login(process.env.USER, process.env.PASS);
     await navigationToSweepstake();
 
-    let index = 0;
+    let index = 80, count = 0;
     setInterval(async () => {
+        count++;
         if(index > people.length - 1)
             index = 0;
+        if(count > 2){
+            count = 1;
+            await reloadPage();
+        }
         await comment(`${people[index].arroba} ${people[index + 1].arroba}`);
         index = index + 2;
-    }, 60000)
+    }, 120000)
 })();
